@@ -1,0 +1,130 @@
+{
+	"modells": [{
+			"name": "Mercedes Benz C",
+			"price": 0,
+			"package_configs": [{
+					"name": "Basis",
+					"description": "...",
+					"types": ["REQUIRED", "SINGLE"],
+					"packages": ["180", "200", "300", "63 AMG"],
+					"defaults": ["180"]
+				},
+				{
+					"name": "Bauart",
+					"description": "...",
+					"types": ["OPTIONAL", "SINGLE"],
+					"packages": ["Bauart1", "Bauart2"],
+					"defaults": ["Bauart1"]
+				},
+				{
+					"name": "Optionen",
+					"description": "...",
+					"types": ["OPTIONAL", "MULTIPLE"],
+					"packages": ["AMG", "Felgen", "Dach", "Winter", "Spoiler", "Getriebe"],
+					"defaults": ["Felgen"]
+				}
+			]
+		},
+		{
+			"name": "Mercedes Benz S",
+			"price": 0,
+			"package_configs": [{
+					"name": "Basis",
+					"description": "...",
+					"types": ["REQUIRED", "SINGLE"],
+					"packages": ["180", "200", "300", "63 AMG"],
+					"defaults": ["180"]
+				},
+				{
+					"name": "Innenraum",
+					"description": "...",
+					"types": ["OPTIONAL", "SINGLE"],
+					"packages": ["Bauart1", "Bauart2"],
+					"defaults": ["Bauart1"]
+				},
+				{
+					"name": "Optionen",
+					"description": "...",
+					"types": ["OPTIONAL", "MULTIPLE"],
+					"packages": ["AMG", "Felgen", "Dach", "Winter", "Spoiler", "Getriebe"],
+					"defaults": ["Getriebe"]
+				}
+			]
+		}
+	],
+	"packages": {
+		"180": {
+			"name": "180",
+			"description": "...",
+			"price": 36000,
+			"required_packages": []
+		},
+		"200": {
+			"name": "200",
+			"description": "...",
+			"price": 55000,
+			"required_packages": []
+		},
+		"300": {
+			"name": "300",
+			"description": "...",
+			"price": 65000,
+			"required_packages": []
+		},
+		"63 AMG": {
+			"name": "63 AMG",
+			"description": "...",
+			"price": 83000,
+			"required_packages": []
+		},
+		"AMG": {
+			"name": "AMG Performance",
+			"description": "...",
+			"price": 3000,
+			"required_packages": []
+		},
+		"Felgen": {
+			"name": "21' Zoll Alufelgen",
+			"description": "...",
+			"price": 800,
+			"required_packages": []
+		},
+		"Dach": {
+			"name": "Panoramadach",
+			"description": "...",
+			"price": 3400,
+			"required_packages": ["AMG"]
+		},
+		"Winter": {
+			"name": "Winter Paket",
+			"description": "...",
+			"price": 4200,
+			"required_packages": []
+		},
+		"Spoiler": {
+			"name": "Heckspoiler",
+			"description": "...",
+			"price": 6600,
+			"required_packages": []
+		},
+		"Getriebe": {
+			"name": "9G-Tronic",
+			"description": "...",
+			"price": 3100,
+			"required_packages": []
+		},
+		"Bauart1": {
+			"name": "FÃ¼nfsitzer",
+			"description": "...",
+			"price": 0,
+			"required_packages": []
+		},
+		"Bauart2": {
+			"name": "Coupé",
+			"description": "...",
+			"price": 6600,
+			"required_packages": []
+		}
+		
+	}
+}
